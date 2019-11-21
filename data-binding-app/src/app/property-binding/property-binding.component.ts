@@ -17,7 +17,7 @@ export class PropertyBindingComponent implements OnInit {
   ngOnInit() {
     setInterval( () => {
       this.idx = (this.idx + 1) % this.colors.length;
-    }, 1000);
+    }, 500);
   }
 
 }
