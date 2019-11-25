@@ -14,6 +14,7 @@ export class EventBindingComponent implements OnInit {
 
   spinnerMode = "determinate";
   btnEnable = true;
+  selDesabled = false;
 
   ngOnInit() {
   }
@@ -32,6 +33,12 @@ export class EventBindingComponent implements OnInit {
       this.btnEnable = true;
       this.spinnerMode = "determinate";
     }, 3000);
+  }
+
+  cbChange(event) {
+    console.log(event.checked);
+    this.selDesabled = event.checked;
+
   }
 
 }
