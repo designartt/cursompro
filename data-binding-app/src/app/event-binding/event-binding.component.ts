@@ -17,6 +17,8 @@ export class EventBindingComponent implements OnInit {
   selDesabled = false;
   selectedOption = 1;
 
+  inputName = "Jhon";
+
   ngOnInit() {
   }
 

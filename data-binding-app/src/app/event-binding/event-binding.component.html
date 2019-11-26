@@ -23,8 +23,7 @@
     <p>
         <mat-form-field>
             <mat-label>Carros</mat-label>
-            <mat-select matNativeControl required
-            [disabled]="selDesabled" (selectionChange)="selectionChange($event)">
+            <mat-select matNativeControl required [disabled]="selDesabled" (selectionChange)="selectionChange($event)">
                 <mat-option value="volvo">Volvo</mat-option>
                 <mat-option value="saab">Saab</mat-option>
                 <mat-option value="mercedes">Mercedes</mat-option>
@@ -33,4 +32,16 @@
         </mat-form-field>
     </p>
     <p>Option: {{ selectedOption }}</p>
+</section>
+
+<hr>
+<section>
+    <mat-form-field>
+        <input matInput placeholder="First name"
+        (input)="inputName = $event.target.value"
+        [value]="inputName">
+    </mat-form-field>
+    <p>
+        Name: {{ inputName }}
+    </p>
 </section>
