@@ -23,13 +23,14 @@
     <p>
         <mat-form-field>
             <mat-label>Carros</mat-label>
-            <select matNativeControl required
-            [disabled]="selDesabled">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select>
+            <mat-select matNativeControl required
+            [disabled]="selDesabled" (selectionChange)="selectionChange($event)">
+                <mat-option value="volvo">Volvo</mat-option>
+                <mat-option value="saab">Saab</mat-option>
+                <mat-option value="mercedes">Mercedes</mat-option>
+                <mat-option value="audi">Audi</mat-option>
+            </mat-select>
         </mat-form-field>
     </p>
+    <p>Option: {{ selectedOption }}</p>
 </section>
