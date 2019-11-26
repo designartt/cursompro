@@ -15,6 +15,7 @@ import {
  } from '@angular/material';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
+import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
     AppComponent,
     NgStyleComponent,
     NgClassComponent,
-    NgIfComponent
+    NgIfComponent,
+    SubNgIfComponent
   ],
   imports: [
     BrowserModule,
