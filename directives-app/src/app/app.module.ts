@@ -9,7 +9,9 @@ import {
   MatCardModule,
   MatRadioModule,
   MatSelectModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatInputModule
  } from '@angular/material';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
@@ -29,7 +31,9 @@ import { NgIfComponent } from './ng-if/ng-if.component';
     MatCardModule,
     MatRadioModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
