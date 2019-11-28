@@ -14,6 +14,14 @@ export class NgForComponent implements OnInit {
     "Mariel"
   ];
 
+  cities = [
+    {name: "São Paulo", state: "SP"},
+    {name: "Rio de Janeiro", state: "RJ"},
+    {name: "Minas Gerais", state: "MG"},
+    {name: "Mato Grosso do Sul", state: "MS"},
+    {name: "Mato Grosso", state: "MT"},
+  ];
+
   constructor() { }
 
   ngOnInit() {
