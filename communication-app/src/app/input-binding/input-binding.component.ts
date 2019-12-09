@@ -22,6 +22,7 @@ export class InputBindingComponent implements OnInit {
       {id:3, name: "John", age: 18},
       {id:4, name: "Liz", age: 2},
     ];
+  
   }
 
   ngOnInit() {
